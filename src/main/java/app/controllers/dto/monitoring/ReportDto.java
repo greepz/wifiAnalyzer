@@ -1,17 +1,18 @@
 package app.controllers.dto.monitoring;
 
+import java.util.Date;
 import java.time.LocalDateTime;
 
 public class ReportDto {
-    private LocalDateTime reportDate;
+    private Date reportDate;
     private String user;
     private WifiDetailsDto pointDto;
 
-    public LocalDateTime getReportDate() {
+    public Date getReportDate() {
         return reportDate;
     }
 
-    public void setReportDate(LocalDateTime reportDate) {
+    public void setReportDate(Date reportDate) {
         this.reportDate = reportDate;
     }
 

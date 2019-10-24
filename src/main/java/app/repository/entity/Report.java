@@ -11,6 +11,18 @@ public class Report {
     @Id
     @GeneratedValue
     Long reportId;
+    private int primaryFrequency;
+    private int centerFrequency;
+    private String wiFiWidth;
+    private int  level;
+    private boolean is80211mc;
+    private String wiFiBand;
+    private int frequencyStart;
+    private int frequencyEnd;
+    private String strength;
+    private String distance;
+    private String channelDisplay;
+
 
     @ManyToOne
     Point point;
