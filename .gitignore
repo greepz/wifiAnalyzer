@@ -2,3 +2,6 @@
 iperfmonitoring.iml
 target
 .DS_Store
+db.mv.db
+db.trace.db
+testanalizer.txt

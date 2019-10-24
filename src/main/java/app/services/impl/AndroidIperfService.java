@@ -12,6 +12,6 @@ public class AndroidIperfService implements IperfService {
 
     @Override
     public void save(IperfDto iperfDto) {
-
+        throw new RuntimeException("stub for service");
     }
 }

@@ -1,15 +1,8 @@
 package app.controllers.dto.monitoring;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
-@Entity
 public class WifiConnectionDto {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private String ssid;
     private String bssid;
     private String ipAddress;
