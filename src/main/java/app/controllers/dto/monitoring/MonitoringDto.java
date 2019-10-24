@@ -1,10 +1,20 @@
 package app.controllers.dto.monitoring;
 
+import app.controllers.dto.common.DeviceDto;
+
 import java.util.List;
 
 public class MonitoringDto {
     List<WifiDetailsDto> wiFiDetails;
-    WifiConnectionDto wiFiConnection;
+    DeviceDto deviceDto;
+
+    public DeviceDto getDeviceDto() {
+        return deviceDto;
+    }
+
+    public void setDeviceDto(DeviceDto deviceDto) {
+        this.deviceDto = deviceDto;
+    }
 
     public List<WifiDetailsDto> getWiFiDetails() {
         return wiFiDetails;
