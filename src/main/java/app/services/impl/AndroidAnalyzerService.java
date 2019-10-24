@@ -2,8 +2,13 @@ package app.services.impl;
 
 import app.controllers.dto.monitoring.MonitoringDto;
 import app.controllers.dto.monitoring.ReportDto;
+import app.controllers.dto.monitoring.WifiDetailsDto;
 import app.converters.ReportMapper;
+import app.repository.AnalizesRepository;
+import app.repository.PointsRepository;
 import app.repository.ReportsRepository;
+import app.repository.UsersRepository;
+import app.repository.entity.*;
 import app.services.AnalyzerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -15,15 +20,48 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+
 @Component("alalyzeService")
 public class AndroidAnalyzerService implements AnalyzerService {
 
+
     @Autowired
-    ReportsRepository repository;
+    AnalizesRepository analizesRepository;
+
+    @Autowired
+    UsersRepository usersRepository;
+
+    @Autowired
+    ReportsRepository reportsRepository;
+    @Autowired
+    PointsRepository pointsRepository;
 
     @Override
     public void save(MonitoringDto monitoringDto) {
-        throw new RuntimeException();
+
+
+        //TODO - пока
+        User user = new User();
+        user.setLogin("Trunov");
+        user.setPassword("123");
+        usersRepository.save(user);
+
+
+
+        Analize analize = new Analize();
+        analize.setUser(user);
+        for(WifiDetailsDto detailsDto : monitoringDto.getWiFiDetails()){
+            Report report = new Report();
+            analize.getReports().add(report);
+            report.setAnalize(analize);
+            Point point = new Point();
+            point.setBssid(detailsDto.getBssid());
+            point.setSsid(detailsDto.getSsid());
+            report.setPoint(point);
+            pointsRepository.save(point);
+        }
+        analizesRepository.save(analize);
+
     }
 
     @Override
@@ -31,7 +69,7 @@ public class AndroidAnalyzerService implements AnalyzerService {
 
         Sort sort = new Sort(Direction.fromString(sortOrder), sortField);
         Pageable pageable = PageRequest.of(page, size, sort);
-        return ReportMapper.generate(repository.findAll(pageable).getContent());
+        return ReportMapper.generate(reportsRepository.findAll(pageable).getContent());
 
     }
 }
