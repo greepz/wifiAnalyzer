@@ -15,7 +15,7 @@ public class IperfController {
     @Autowired
     IperfService service;
 
-    @PostMapping("/send")
+    @PostMapping("/iperf/send")
     public void receive(IperfDto data){
         ObjectMapper mapper = new ObjectMapper();
         try{
