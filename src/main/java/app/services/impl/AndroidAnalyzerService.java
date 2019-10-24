@@ -23,7 +23,7 @@ public class AndroidAnalyzerService implements AnalyzerService {
 
     @Override
     public void save(MonitoringDto monitoringDto) {
-        throw new RuntimeException("stub for analyzer service");
+        throw new RuntimeException();
     }
 
     @Override
