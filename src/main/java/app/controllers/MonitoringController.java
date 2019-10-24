@@ -20,7 +20,7 @@ import java.util.List;
 public class MonitoringController {
 
     @Autowired
-    @Qualifier("alalyzeService")
+    @Qualifier("analyzeService")
     private AnalyzerService service;
 
 

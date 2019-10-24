@@ -4,12 +4,24 @@ public class WifiDetailsDto {
     private String ssid;
     private String bssid;
     private String capabilities;
-    private WifiSignalDto wifiSignal;
+    private WifiSignalDto wiFiSignal;
     private WifiAdditionalDto wifiAdditional;
     //TODO в теле запроса не типизированный массив
     private Object[] children;
     private String security;
     private boolean isHidden;
+
+    public void setBssid(String bssid) {
+        this.bssid = bssid;
+    }
+
+    public WifiSignalDto getWiFiSignal() {
+        return wiFiSignal;
+    }
+
+    public void setWiFiSignal(WifiSignalDto wiFiSignal) {
+        this.wiFiSignal = wiFiSignal;
+    }
 
     public String getSsid() {
         return ssid;
@@ -33,14 +45,6 @@ public class WifiDetailsDto {
 
     public void setCapabilities(String capabilities) {
         this.capabilities = capabilities;
-    }
-
-    public WifiSignalDto getWifiSignal() {
-        return wifiSignal;
-    }
-
-    public void setWifiSignal(WifiSignalDto wifiSignal) {
-        this.wifiSignal = wifiSignal;
     }
 
     public WifiAdditionalDto getWifiAdditional() {

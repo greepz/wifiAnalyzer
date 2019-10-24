@@ -22,7 +22,7 @@ import java.util.Date;
 import java.util.List;
 
 
-@Component("alalyzeService")
+@Component("analyzeService")
 public class AndroidAnalyzerService implements AnalyzerService {
 
 
@@ -54,10 +54,30 @@ public class AndroidAnalyzerService implements AnalyzerService {
             Point point = new Point();
             point.setBssid(detailsDto.getBssid());
             point.setSsid(detailsDto.getSsid());
-            report.setPoint(point);
+            point.setCapabilities(detailsDto.getCapabilities());
             pointsRepository.save(point);
+            report.setPoint(point);
+            report.setPrimaryFrequency(detailsDto.getWiFiSignal().getPrimaryFrequency());
+            report.setCenterFrequency(detailsDto.getWiFiSignal().getCenterFrequency());
+            report.setWiFiWidth(detailsDto.getWiFiSignal().getWiFiWidth());
+            report.setLevel(detailsDto.getWiFiSignal().getLevel());
+            report.setIs80211mc(detailsDto.getWiFiSignal().isIs80211mc());
+            report.setWiFiBand(detailsDto.getWiFiSignal().getWiFiBand());
+            report.setFrequencyStart(detailsDto.getWiFiSignal().getFrequencyStart());
+            report.setFrequencyEnd(detailsDto.getWiFiSignal().getFrequencyEnd());
+            report.setStrength(detailsDto.getWiFiSignal().getStrength());
+            report.setDistance(detailsDto.getWiFiSignal().getDistance());
+            report.setChannelDisplay(detailsDto.getWiFiSignal().getChannelDisplay());
+            report.setPrimaryWiFiChannel(detailsDto.getWiFiSignal().getPrimaryWiFiChannel().getChannel());
+            report.setPrimaryWiFiFrequency(detailsDto.getWiFiSignal().getPrimaryWiFiChannel().getFrequency());
+            report.setSecurity(detailsDto.getSecurity());
+            report.setHidden(detailsDto.isHidden());
+
         }
         analizesRepository.save(analize);
+
+
+
 
     }
 
