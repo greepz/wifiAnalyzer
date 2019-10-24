@@ -70,6 +70,8 @@ public class AndroidAnalyzerService implements AnalyzerService {
             report.setChannelDisplay(detailsDto.getWiFiSignal().getChannelDisplay());
             report.setPrimaryWiFiChannel(detailsDto.getWiFiSignal().getPrimaryWiFiChannel().getChannel());
             report.setPrimaryWiFiFrequency(detailsDto.getWiFiSignal().getPrimaryWiFiChannel().getFrequency());
+            report.setPrimaryWiFiChannel(detailsDto.getWiFiSignal().getCenterWiFiChannel().getChannel());
+            report.setPrimaryWiFiFrequency(detailsDto.getWiFiSignal().getCenterWiFiChannel().getFrequency());
             report.setSecurity(detailsDto.getSecurity());
             report.setHidden(detailsDto.isHidden());
 

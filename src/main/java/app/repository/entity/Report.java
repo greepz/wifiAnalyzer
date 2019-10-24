@@ -24,8 +24,26 @@ public class Report {
     private String channelDisplay;
     private int primaryWiFiChannel;
     private int primaryWiFiFrequency;
+    private int centerWiFiFrequency;
+    private int centerWiFiChannel;
     private String security;
     private boolean isHidden;
+
+    public int getCenterWiFiFrequency() {
+        return centerWiFiFrequency;
+    }
+
+    public void setCenterWiFiFrequency(int centerWiFiFrequency) {
+        this.centerWiFiFrequency = centerWiFiFrequency;
+    }
+
+    public int getCenterWiFiChannel() {
+        return centerWiFiChannel;
+    }
+
+    public void setCenterWiFiChannel(int centerWiFiChannel) {
+        this.centerWiFiChannel = centerWiFiChannel;
+    }
 
     public int getPrimaryWiFiFrequency() {
         return primaryWiFiFrequency;
