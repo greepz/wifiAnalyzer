@@ -18,7 +18,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Sort.Direction;
 import org.springframework.stereotype.Component;
 
-import java.sql.Date;
+import java.util.Date;
 import java.util.List;
 
 
@@ -46,7 +46,7 @@ public class AndroidAnalyzerService implements AnalyzerService {
 
         Analize analize = new Analize();
         analize.setUser(user);
-        analize.setCreated(new Date(System.currentTimeMillis()));
+        analize.setCreated(System.currentTimeMillis());
         for(WifiDetailsDto detailsDto : monitoringDto.getWiFiDetails()){
             Report report = new Report();
             analize.getReports().add(report);

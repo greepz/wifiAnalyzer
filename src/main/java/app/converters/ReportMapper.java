@@ -8,7 +8,10 @@ import app.repository.entity.Analize;
 import app.repository.entity.Point;
 import app.repository.entity.Report;
 
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -20,7 +23,7 @@ public class ReportMapper {
             for(Report report: analize.getReports()){
                 ReportDto reportDto = new ReportDto();
                 reportDto.setUser(analize.getUser().getLogin());
-                reportDto.setReportDate(null);
+                reportDto.setReportDate(new Date(analize.getCreated()));
                 reportDto.setPointDto(mapReport(report.getPoint()));
                 reportDtos.add(reportDto);
             }

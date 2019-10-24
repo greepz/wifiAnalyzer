@@ -14,6 +14,24 @@ public class Point {
     @Id
     String bssid;
     String ssid;
+    String capabilities;
+
+
+    public List<Report> getReports() {
+        return reports;
+    }
+
+    public void setReports(List<Report> reports) {
+        this.reports = reports;
+    }
+
+    public String getCapabilities() {
+        return capabilities;
+    }
+
+    public void setCapabilities(String capabilities) {
+        this.capabilities = capabilities;
+    }
 
     public String getBssid() {
         return bssid;
