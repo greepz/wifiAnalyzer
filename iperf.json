@@ -19,7 +19,7 @@
     "version": "iperf 3.7+",
     "system_info": "Darwin CAB-WSM-0001571 19.0.0 Darwin Kernel Version 19.0.0: Wed Sep 25 20:18:50 PDT 2019; root:xnu-6153.11.26~2/RELEASE_X86_64 x86_64",
     "sock_bufsize": 0,
-    "sndbuf_actual": 131072,
+    "getSecond()buf_actual": 131072,
     "rcvbuf_actual": 131072,
     "timestamp": {
       "time": "Wed, 23 Oct 2019 13:25:33 UTC",
