@@ -91,4 +91,15 @@ public class AndroidAnalyzerService implements AnalyzerService {
         return ReportMapper.generate(analizesRepository.findAll(pageable).getContent());
 
     }
+
+    @Override
+    public ReportDto getReportById(Long id) {
+        Report report = reportsRepository.getOne(id);
+        ReportDto reportDto = new ReportDto();
+        reportDto.setId(report.getReportId());
+        reportDto.setUser(report.getAnalize().getUser().getLogin());
+        reportDto.setReportDate(new Date(report.getAnalize().getCreated()));
+        reportDto.setPointDto(ReportMapper.mapReport(report));
+        return  reportDto;
+    }
 }

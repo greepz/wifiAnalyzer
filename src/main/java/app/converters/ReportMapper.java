@@ -30,7 +30,7 @@ public class ReportMapper {
         return reportDtos;
     }
 
-    private static WifiDetailsDto mapReport(Report report){
+    public static WifiDetailsDto mapReport(Report report){
         WifiDetailsDto wifiDetailsDto = new WifiDetailsDto();
         wifiDetailsDto.setBsid(report.getPoint().getBssid());
         wifiDetailsDto.setBssid(report.getPoint().getBssid());
@@ -64,20 +64,6 @@ public class ReportMapper {
         return wifiDetailsDto;
     }
 
-    private static WifiAdditionalDto mapWifiAdditional() {
 
-        WifiAdditionalDto wifiAdditionalDto = new WifiAdditionalDto();
-       // wifiAdditionalDto.setVendorName();
-
-        return wifiAdditionalDto;
-
-    }
-
-    private static WifiSignalDto mapWifiSignal(){
-        WifiSignalDto wifiSignalDto = new WifiSignalDto();
-
-
-        return wifiSignalDto;
-    }
 
 }

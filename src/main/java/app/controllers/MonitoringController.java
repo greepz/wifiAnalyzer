@@ -43,6 +43,12 @@ public class MonitoringController {
         return new ResponseEntity<>(list, HttpStatus.OK);
     }
 
+    @GetMapping(value = "/monitoring/get/{id}")
+    public ResponseEntity<ReportDto> getReport(@PathVariable(name = "id") Long id){
+        ReportDto reportDto =  service.getReportById(id);
+        return new ResponseEntity<>(reportDto, HttpStatus.OK);
+    }
+
 }
 
 

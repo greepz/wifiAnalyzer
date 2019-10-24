@@ -10,4 +10,6 @@ public interface AnalyzerService {
     void save(MonitoringDto monitoringDto);
     List<ReportDto> getReport(int page, int size, String sortField, String sortOrder, String filterField, String filterValue);
 
+    ReportDto getReportById(Long id);
+
 }
