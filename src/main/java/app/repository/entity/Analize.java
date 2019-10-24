@@ -4,6 +4,7 @@ import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import java.util.ArrayList;
@@ -21,7 +22,7 @@ public class Analize {
     @OneToOne
     User user;
 
-    @OneToOne
+    @ManyToOne
     Device device;
 
     public Long getAnalizeId() {

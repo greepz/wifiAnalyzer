@@ -3,7 +3,10 @@ package app.services.impl;
 import app.controllers.dto.monitoring.MonitoringDto;
 import app.controllers.dto.monitoring.ReportDto;
 import app.converters.ReportMapper;
+import app.repository.entity.Report;
 import app.services.AnalyzerService;
+
+import java.util.ArrayList;
 import java.util.List;
 
 

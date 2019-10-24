@@ -2,7 +2,7 @@ package app.controllers.dto.monitoring;
 
 public class WifiDetailsDto {
     private String ssid;
-    private String bsid;
+    private String bssid;
     private String capabilities;
     private WifiSignalDto wifiSignal;
     private WifiAdditionalDto wifiAdditional;
@@ -19,12 +19,12 @@ public class WifiDetailsDto {
         this.ssid = ssid;
     }
 
-    public String getBsid() {
-        return bsid;
+    public String getBssid() {
+        return bssid;
     }
 
     public void setBsid(String bsid) {
-        this.bsid = bsid;
+        this.bssid = bssid;
     }
 
     public String getCapabilities() {
