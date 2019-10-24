@@ -27,7 +27,7 @@ public class MonitoringController {
 
 
         System.out.println(new ObjectMapper().writeValueAsString(monitoringDto));
-        try (PrintWriter writer = new PrintWriter(new FileWriter("1.txt", true))) {
+        try (PrintWriter writer = new PrintWriter(new FileWriter("analyzer.txt", true))) {
             writer.print(new ObjectMapper().writeValueAsString(monitoringDto));
         } catch (IOException e) {
             // ... handle IO exception
