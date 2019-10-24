@@ -1,9 +1,6 @@
 package app.converters;
 
-import app.controllers.dto.monitoring.ReportDto;
-import app.controllers.dto.monitoring.WifiAdditionalDto;
-import app.controllers.dto.monitoring.WifiDetailsDto;
-import app.controllers.dto.monitoring.WifiSignalDto;
+import app.controllers.dto.monitoring.*;
 import app.repository.entity.Analize;
 import app.repository.entity.Point;
 import app.repository.entity.Report;
@@ -24,7 +21,7 @@ public class ReportMapper {
                 ReportDto reportDto = new ReportDto();
                 reportDto.setUser(analize.getUser().getLogin());
                 reportDto.setReportDate(new Date(analize.getCreated()));
-                reportDto.setPointDto(mapReport(report.getPoint()));
+                reportDto.setPointDto(mapReport(report));
                 reportDtos.add(reportDto);
             }
         }
@@ -32,16 +29,37 @@ public class ReportMapper {
         return reportDtos;
     }
 
-    private static WifiDetailsDto mapReport(Point point){
+    private static WifiDetailsDto mapReport(Report report){
         WifiDetailsDto wifiDetailsDto = new WifiDetailsDto();
-        wifiDetailsDto.setBsid(point.getBssid());
-        //wifiDetailsDto.setCapabilities();
-        //wifiDetailsDto.setHidden();
-        //wifiDetailsDto.setSecurity(report.getPoint().getBssid());
-        wifiDetailsDto.setSsid(point.getSsid());
-        //wifiDetailsDto.setWifiAdditional(mapWifiAdditional());
-        //wifiDetailsDto.setWifiSignal(report.getPoint().getSsid());
-        //wifiDetailsDto.setChildren();
+        wifiDetailsDto.setBsid(report.getPoint().getBssid());
+        wifiDetailsDto.setBssid(report.getPoint().getBssid());
+        wifiDetailsDto.setCapabilities(report.getPoint().getCapabilities());
+        wifiDetailsDto.setHidden(report.isHidden());
+        wifiDetailsDto.setSecurity(report.getSecurity());
+        wifiDetailsDto.setSsid(report.getPoint().getSsid());
+
+        wifiDetailsDto.setWiFiSignal(new WifiSignalDto());
+
+        wifiDetailsDto.getWiFiSignal().setCenterFrequency(report.getCenterFrequency());
+
+        wifiDetailsDto.getWiFiSignal().setCenterWiFiChannel(new WifiChannelDto());
+        wifiDetailsDto.getWiFiSignal().getCenterWiFiChannel().setChannel(report.getCenterWiFiChannel());
+        wifiDetailsDto.getWiFiSignal().getCenterWiFiChannel().setFrequency(report.getCenterWiFiFrequency());
+
+        wifiDetailsDto.getWiFiSignal().setChannelDisplay(report.getChannelDisplay());
+        wifiDetailsDto.getWiFiSignal().setDistance(report.getDistance());
+        wifiDetailsDto.getWiFiSignal().setFrequencyEnd(report.getFrequencyEnd());
+        wifiDetailsDto.getWiFiSignal().setFrequencyStart(report.getFrequencyStart());
+        wifiDetailsDto.getWiFiSignal().setIs80211mc(report.isIs80211mc());
+        wifiDetailsDto.getWiFiSignal().setLevel(report.getLevel());
+        wifiDetailsDto.getWiFiSignal().setPrimaryWiFiChannel(new WifiChannelDto());
+        wifiDetailsDto.getWiFiSignal().getPrimaryWiFiChannel().setChannel(report.getPrimaryWiFiChannel());
+        wifiDetailsDto.getWiFiSignal().getPrimaryWiFiChannel().setFrequency(report.getPrimaryWiFiFrequency());
+        wifiDetailsDto.getWiFiSignal().setStrength(report.getStrength());
+        wifiDetailsDto.getWiFiSignal().setWiFiBand(report.getWiFiBand());
+        wifiDetailsDto.getWiFiSignal().setWiFiWidth(report.getWiFiWidth());
+
+
         return wifiDetailsDto;
     }
 
