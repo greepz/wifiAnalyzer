@@ -26,7 +26,7 @@ public class MonitoringController {
 
     @PostMapping("/monitoring/send")
     public ResponseEntity<String> receive(@RequestBody MonitoringDto monitoringDto) throws JsonProcessingException {
-
+        service.save(monitoringDto);
         return new ResponseEntity<>("success", HttpStatus.CREATED);
     }
 

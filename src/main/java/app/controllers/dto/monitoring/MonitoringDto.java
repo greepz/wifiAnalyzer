@@ -23,12 +23,4 @@ public class MonitoringDto {
     public void setWiFiDetails(List<WifiDetailsDto> wiFiDetails) {
         this.wiFiDetails = wiFiDetails;
     }
-
-    public WifiConnectionDto getWiFiConnection() {
-        return wiFiConnection;
-    }
-
-    public void setWiFiConnection(WifiConnectionDto wiFiConnection) {
-        this.wiFiConnection = wiFiConnection;
-    }
 }
