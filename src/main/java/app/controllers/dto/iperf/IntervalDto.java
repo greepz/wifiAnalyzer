@@ -3,22 +3,22 @@ package app.controllers.dto.iperf;
 import java.util.List;
 
 public class IntervalDto {
-    private List<StreamDto> streamDtos;
-    private SumDto sumDto;
+    private List<StreamDto> streams;
+    private SumDto sum;
 
-    public List<StreamDto> getStreamDtos() {
-        return streamDtos;
+    public List<StreamDto> getStreams() {
+        return streams;
     }
 
-    public void setStreamDtos(List<StreamDto> streamDtos) {
-        this.streamDtos = streamDtos;
+    public void setStreams(List<StreamDto> streams) {
+        this.streams = streams;
     }
 
-    public SumDto getSumDto() {
-        return sumDto;
+    public SumDto getSum() {
+        return sum;
     }
 
-    public void setSumDto(SumDto sumDto) {
-        this.sumDto = sumDto;
+    public void setSum(SumDto sum) {
+        this.sum = sum;
     }
 }

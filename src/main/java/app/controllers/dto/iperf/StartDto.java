@@ -9,7 +9,7 @@ public class StartDto {
     private int sock_bufsize;
     private int sndbuf_actual;
     private int rcvbuf_actual;
-    private TimestampDto timestampDto;
+    private TimestampDto timestamp;
     private AcceptConnectionDto accepted_connection;
     private String cookie;
     private int tcp_mss_default;
@@ -63,12 +63,12 @@ public class StartDto {
         this.rcvbuf_actual = rcvbuf_actual;
     }
 
-    public TimestampDto getTimestampDto() {
-        return timestampDto;
+    public TimestampDto getTimestamp() {
+        return timestamp;
     }
 
-    public void setTimestampDto(TimestampDto timestampDto) {
-        this.timestampDto = timestampDto;
+    public void setTimestamp(TimestampDto timestamp) {
+        this.timestamp = timestamp;
     }
 
     public AcceptConnectionDto getAccepted_connection() {
@@ -104,75 +104,4 @@ public class StartDto {
     }
 
 
-
-     public static class Builder{
-
-        StartDto startDto;
-
-        public Builder(){
-            startDto = new StartDto();
-        }
-
-        public Builder withConnects(List<ConnectDto> list){
-            startDto.connected = list;
-            return this;
-        }
-
-        public Builder addVersion(String version){
-            startDto.version = version;
-            return this;
-        }
-
-        public Builder addSystemInfo(String systemInfo){
-            startDto.system_info = systemInfo;
-            return this;
-        }
-
-        public Builder withSockBufSize(int sockBufSize){
-            startDto.sock_bufsize = sockBufSize;
-            return this;
-        }
-
-        public Builder withSndBufActual(int sndBufActual){
-            startDto.sndbuf_actual = sndBufActual;
-            return this;
-        }
-
-        public Builder addRcvBufActual(int rcvbuf_actual){
-            startDto.rcvbuf_actual = rcvbuf_actual;
-            return this;
-        }
-
-        public Builder withTimeStampDto(TimestampDto timestampDto){
-            startDto.timestampDto = timestampDto;
-            return this;
-        }
-
-        public Builder withAcceptConnectionDto(AcceptConnectionDto acceptConnectionDto){
-            startDto.accepted_connection = acceptConnectionDto;
-            return this;
-        }
-
-        public Builder withCookie(String cookie){
-            startDto.cookie = cookie;
-            return this;
-        }
-
-        public Builder withTcpMssDefault(int tcp_mss_default){
-            startDto.tcp_mss_default = tcp_mss_default;
-            return this;
-        }
-
-        public Builder withTestStartDto(TestStartDto testStartDto){
-            startDto.test_start = testStartDto;
-            return this;
-        }
-
-        public StartDto build(){
-            return this.startDto;
-        }
-
-
-
-    }
 }

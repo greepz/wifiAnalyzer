@@ -3,31 +3,31 @@ package app.controllers.dto.iperf;
 import java.util.List;
 
 public class IperfDto {
-    private StartDto startDto;
-    private List<IntervalDto> intervalDtos;
-    private EndDto endDto;
+    private StartDto start;
+    private List<IntervalDto> intervals;
+    private EndDto end;
 
-    public StartDto getStartDto() {
-        return startDto;
+    public StartDto getStart() {
+        return start;
     }
 
-    public void setStartDto(StartDto startDto) {
-        this.startDto = startDto;
+    public void setStart(StartDto start) {
+        this.start = start;
     }
 
-    public List<IntervalDto> getIntervalDtos() {
-        return intervalDtos;
+    public List<IntervalDto> getIntervals() {
+        return intervals;
     }
 
-    public void setIntervalDtos(List<IntervalDto> intervalDtos) {
-        this.intervalDtos = intervalDtos;
+    public void setIntervals(List<IntervalDto> intervals) {
+        this.intervals = intervals;
     }
 
-    public EndDto getEndDto() {
-        return endDto;
+    public EndDto getEnd() {
+        return end;
     }
 
-    public void setEndDto(EndDto endDto) {
-        this.endDto = endDto;
+    public void setEnd(EndDto end) {
+        this.end = end;
     }
 }
