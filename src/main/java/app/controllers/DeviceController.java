@@ -1,6 +1,6 @@
 package app.controllers;
 
-import app.controllers.dto.DeviceDto;
+import app.controllers.dto.common.DeviceDto;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

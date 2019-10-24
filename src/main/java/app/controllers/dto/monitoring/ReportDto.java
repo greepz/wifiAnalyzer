@@ -23,5 +23,11 @@ public class ReportDto {
         this.user = user;
     }
 
+    public WifiDetailsDto getPointDto() {
+        return pointDto;
+    }
 
+    public void setPointDto(WifiDetailsDto pointDto) {
+        this.pointDto = pointDto;
+    }
 }

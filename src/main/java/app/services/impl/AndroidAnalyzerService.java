@@ -69,7 +69,7 @@ public class AndroidAnalyzerService implements AnalyzerService {
 
         Sort sort = new Sort(Direction.fromString(sortOrder), sortField);
         Pageable pageable = PageRequest.of(page, size, sort);
-        return ReportMapper.generate(reportsRepository.findAll(pageable).getContent());
+        return ReportMapper.generate(analizesRepository.findAll(pageable).getContent());
 
     }
 }
