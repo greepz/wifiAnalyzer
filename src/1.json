@@ -1,0 +1,996 @@
+{
+  "wiFiDetails": [
+    {
+      "SSID": "T1",
+      "bssid": "20:10:7a:9c:fe:1e",
+      "capabilities": "[WPA2-PSK-TKIP][ESS]",
+      "wiFiSignal": {
+        "primaryFrequency": 2447,
+        "centerFrequency": 2447,
+        "wiFiWidth": "MHZ_20",
+        "level": -53,
+        "is80211mc": false,
+        "wiFiBand": "GHZ2",
+        "frequencyStart": 2437,
+        "frequencyEnd": 2457,
+        "primaryWiFiChannel": {
+          "channel": 8,
+          "frequency": 2447
+        },
+        "centerWiFiChannel": {
+          "channel": 8,
+          "frequency": 2447
+        },
+        "strength": "FOUR",
+        "distance": "~4.4m",
+        "channelDisplay": "8"
+      },
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "ssid": "",
+          "bssid": "",
+          "ipAddress": "",
+          "linkSpeed": "LINK_SPEED_UNKNOWN",
+          "mTxLinkSpeed": "LINK_SPEED_UNKNOWN",
+          "mRxLinkSpeed": "LINK_SPEED_UNKNOWN"
+        }
+      },
+      "children": [],
+      "security": "WPA2",
+      "ssid": "T1",
+      "isHidden": false
+    },
+    {
+      "SSID": "Sberbank-Guest",
+      "bssid": "00:a6:ca:35:a5:d7",
+      "capabilities": "[ESS]",
+      "wiFiSignal": {
+        "primaryFrequency": 2437,
+        "centerFrequency": 2437,
+        "wiFiWidth": "MHZ_20",
+        "level": -65,
+        "is80211mc": false,
+        "wiFiBand": "GHZ2",
+        "frequencyStart": 2427,
+        "frequencyEnd": 2447,
+        "primaryWiFiChannel": {
+          "channel": 6,
+          "frequency": 2437
+        },
+        "centerWiFiChannel": {
+          "channel": 6,
+          "frequency": 2437
+        },
+        "strength": "THREE",
+        "distance": "~17.4m",
+        "channelDisplay": "6"
+      },
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "ssid": "",
+          "bssid": "",
+          "ipAddress": "",
+          "linkSpeed": "LINK_SPEED_UNKNOWN",
+          "mTxLinkSpeed": "LINK_SPEED_UNKNOWN",
+          "mRxLinkSpeed": "LINK_SPEED_UNKNOWN"
+        }
+      },
+      "children": [],
+      "security": "NONE",
+      "ssid": "Sberbank-Guest",
+      "isHidden": false
+    },
+    {
+      "SSID": "SBRF",
+      "bssid": "00:a6:ca:35:a5:d0",
+      "capabilities": "[WPA2-EAP-CCMP][ESS]",
+      "wiFiSignal": {
+        "primaryFrequency": 2437,
+        "centerFrequency": 2437,
+        "wiFiWidth": "MHZ_20",
+        "level": -66,
+        "is80211mc": false,
+        "wiFiBand": "GHZ2",
+        "frequencyStart": 2427,
+        "frequencyEnd": 2447,
+        "primaryWiFiChannel": {
+          "channel": 6,
+          "frequency": 2437
+        },
+        "centerWiFiChannel": {
+          "channel": 6,
+          "frequency": 2437
+        },
+        "strength": "THREE",
+        "distance": "~19.5m",
+        "channelDisplay": "6"
+      },
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "ssid": "",
+          "bssid": "",
+          "ipAddress": "",
+          "linkSpeed": "LINK_SPEED_UNKNOWN",
+          "mTxLinkSpeed": "LINK_SPEED_UNKNOWN",
+          "mRxLinkSpeed": "LINK_SPEED_UNKNOWN"
+        }
+      },
+      "children": [],
+      "security": "WPA2",
+      "ssid": "SBRF",
+      "isHidden": false
+    },
+    {
+      "SSID": "CNS",
+      "bssid": "00:a6:ca:35:a5:d3",
+      "capabilities": "[ESS]",
+      "wiFiSignal": {
+        "primaryFrequency": 2437,
+        "centerFrequency": 2437,
+        "wiFiWidth": "MHZ_20",
+        "level": -66,
+        "is80211mc": false,
+        "wiFiBand": "GHZ2",
+        "frequencyStart": 2427,
+        "frequencyEnd": 2447,
+        "primaryWiFiChannel": {
+          "channel": 6,
+          "frequency": 2437
+        },
+        "centerWiFiChannel": {
+          "channel": 6,
+          "frequency": 2437
+        },
+        "strength": "THREE",
+        "distance": "~19.5m",
+        "channelDisplay": "6"
+      },
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "ssid": "",
+          "bssid": "",
+          "ipAddress": "",
+          "linkSpeed": "LINK_SPEED_UNKNOWN",
+          "mTxLinkSpeed": "LINK_SPEED_UNKNOWN",
+          "mRxLinkSpeed": "LINK_SPEED_UNKNOWN"
+        }
+      },
+      "children": [],
+      "security": "NONE",
+      "ssid": "CNS",
+      "isHidden": false
+    },
+    {
+      "SSID": "Sberbank",
+      "bssid": "00:a6:ca:35:a5:d1",
+      "capabilities": "[WPA2-EAP-CCMP][ESS]",
+      "wiFiSignal": {
+        "primaryFrequency": 2437,
+        "centerFrequency": 2437,
+        "wiFiWidth": "MHZ_20",
+        "level": -66,
+        "is80211mc": false,
+        "wiFiBand": "GHZ2",
+        "frequencyStart": 2427,
+        "frequencyEnd": 2447,
+        "primaryWiFiChannel": {
+          "channel": 6,
+          "frequency": 2437
+        },
+        "centerWiFiChannel": {
+          "channel": 6,
+          "frequency": 2437
+        },
+        "strength": "THREE",
+        "distance": "~19.5m",
+        "channelDisplay": "6"
+      },
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "ssid": "",
+          "bssid": "",
+          "ipAddress": "",
+          "linkSpeed": "LINK_SPEED_UNKNOWN",
+          "mTxLinkSpeed": "LINK_SPEED_UNKNOWN",
+          "mRxLinkSpeed": "LINK_SPEED_UNKNOWN"
+        }
+      },
+      "children": [],
+      "security": "WPA2",
+      "ssid": "Sberbank",
+      "isHidden": false
+    },
+    {
+      "SSID": "",
+      "bssid": "00:a6:ca:35:a5:d4",
+      "capabilities": "[WPA2-PSK-CCMP][ESS]",
+      "wiFiSignal": {
+        "primaryFrequency": 2437,
+        "centerFrequency": 2437,
+        "wiFiWidth": "MHZ_20",
+        "level": -66,
+        "is80211mc": false,
+        "wiFiBand": "GHZ2",
+        "frequencyStart": 2427,
+        "frequencyEnd": 2447,
+        "primaryWiFiChannel": {
+          "channel": 6,
+          "frequency": 2437
+        },
+        "centerWiFiChannel": {
+          "channel": 6,
+          "frequency": 2437
+        },
+        "strength": "THREE",
+        "distance": "~19.5m",
+        "channelDisplay": "6"
+      },
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "ssid": "",
+          "bssid": "",
+          "ipAddress": "",
+          "linkSpeed": "LINK_SPEED_UNKNOWN",
+          "mTxLinkSpeed": "LINK_SPEED_UNKNOWN",
+          "mRxLinkSpeed": "LINK_SPEED_UNKNOWN"
+        }
+      },
+      "children": [],
+      "security": "WPA2",
+      "ssid": "***",
+      "isHidden": true
+    },
+    {
+      "SSID": "Sberbank-Guest",
+      "bssid": "00:a6:ca:35:a5:d8",
+      "capabilities": "[ESS]",
+      "wiFiSignal": {
+        "primaryFrequency": 5180,
+        "centerFrequency": 5190,
+        "wiFiWidth": "MHZ_40",
+        "level": -72,
+        "is80211mc": false,
+        "wiFiBand": "GHZ5",
+        "frequencyStart": 5170,
+        "frequencyEnd": 5210,
+        "primaryWiFiChannel": {
+          "channel": 36,
+          "frequency": 5180
+        },
+        "centerWiFiChannel": {
+          "channel": 38,
+          "frequency": 5190
+        },
+        "strength": "TWO",
+        "distance": "~18.3m",
+        "channelDisplay": "36(38)"
+      },
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "ssid": "",
+          "bssid": "",
+          "ipAddress": "",
+          "linkSpeed": "LINK_SPEED_UNKNOWN",
+          "mTxLinkSpeed": "LINK_SPEED_UNKNOWN",
+          "mRxLinkSpeed": "LINK_SPEED_UNKNOWN"
+        }
+      },
+      "children": [],
+      "security": "NONE",
+      "ssid": "Sberbank-Guest",
+      "isHidden": false
+    },
+    {
+      "SSID": "SBRF",
+      "bssid": "00:a6:ca:35:a5:df",
+      "capabilities": "[WPA2-EAP-CCMP][ESS]",
+      "wiFiSignal": {
+        "primaryFrequency": 5180,
+        "centerFrequency": 5190,
+        "wiFiWidth": "MHZ_40",
+        "level": -72,
+        "is80211mc": false,
+        "wiFiBand": "GHZ5",
+        "frequencyStart": 5170,
+        "frequencyEnd": 5210,
+        "primaryWiFiChannel": {
+          "channel": 36,
+          "frequency": 5180
+        },
+        "centerWiFiChannel": {
+          "channel": 38,
+          "frequency": 5190
+        },
+        "strength": "TWO",
+        "distance": "~18.3m",
+        "channelDisplay": "36(38)"
+      },
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "ssid": "",
+          "bssid": "",
+          "ipAddress": "",
+          "linkSpeed": "LINK_SPEED_UNKNOWN",
+          "mTxLinkSpeed": "LINK_SPEED_UNKNOWN",
+          "mRxLinkSpeed": "LINK_SPEED_UNKNOWN"
+        }
+      },
+      "children": [],
+      "security": "WPA2",
+      "ssid": "SBRF",
+      "isHidden": false
+    },
+    {
+      "SSID": "SBRF_HighQuality",
+      "bssid": "00:a6:ca:35:a5:dd",
+      "capabilities": "[WPA2-EAP-CCMP][ESS]",
+      "wiFiSignal": {
+        "primaryFrequency": 5180,
+        "centerFrequency": 5190,
+        "wiFiWidth": "MHZ_40",
+        "level": -72,
+        "is80211mc": false,
+        "wiFiBand": "GHZ5",
+        "frequencyStart": 5170,
+        "frequencyEnd": 5210,
+        "primaryWiFiChannel": {
+          "channel": 36,
+          "frequency": 5180
+        },
+        "centerWiFiChannel": {
+          "channel": 38,
+          "frequency": 5190
+        },
+        "strength": "TWO",
+        "distance": "~18.3m",
+        "channelDisplay": "36(38)"
+      },
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "ssid": "",
+          "bssid": "",
+          "ipAddress": "",
+          "linkSpeed": "LINK_SPEED_UNKNOWN",
+          "mTxLinkSpeed": "LINK_SPEED_UNKNOWN",
+          "mRxLinkSpeed": "LINK_SPEED_UNKNOWN"
+        }
+      },
+      "children": [],
+      "security": "WPA2",
+      "ssid": "SBRF_HighQuality",
+      "isHidden": false
+    },
+    {
+      "SSID": "Sberbank",
+      "bssid": "00:a6:ca:35:a5:de",
+      "capabilities": "[WPA2-EAP-CCMP][ESS]",
+      "wiFiSignal": {
+        "primaryFrequency": 5180,
+        "centerFrequency": 5190,
+        "wiFiWidth": "MHZ_40",
+        "level": -72,
+        "is80211mc": false,
+        "wiFiBand": "GHZ5",
+        "frequencyStart": 5170,
+        "frequencyEnd": 5210,
+        "primaryWiFiChannel": {
+          "channel": 36,
+          "frequency": 5180
+        },
+        "centerWiFiChannel": {
+          "channel": 38,
+          "frequency": 5190
+        },
+        "strength": "TWO",
+        "distance": "~18.3m",
+        "channelDisplay": "36(38)"
+      },
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "ssid": "",
+          "bssid": "",
+          "ipAddress": "",
+          "linkSpeed": "LINK_SPEED_UNKNOWN",
+          "mTxLinkSpeed": "LINK_SPEED_UNKNOWN",
+          "mRxLinkSpeed": "LINK_SPEED_UNKNOWN"
+        }
+      },
+      "children": [],
+      "security": "WPA2",
+      "ssid": "Sberbank",
+      "isHidden": false
+    },
+    {
+      "SSID": "CNS",
+      "bssid": "00:a6:ca:35:a5:dc",
+      "capabilities": "[ESS]",
+      "wiFiSignal": {
+        "primaryFrequency": 5180,
+        "centerFrequency": 5190,
+        "wiFiWidth": "MHZ_40",
+        "level": -72,
+        "is80211mc": false,
+        "wiFiBand": "GHZ5",
+        "frequencyStart": 5170,
+        "frequencyEnd": 5210,
+        "primaryWiFiChannel": {
+          "channel": 36,
+          "frequency": 5180
+        },
+        "centerWiFiChannel": {
+          "channel": 38,
+          "frequency": 5190
+        },
+        "strength": "TWO",
+        "distance": "~18.3m",
+        "channelDisplay": "36(38)"
+      },
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "ssid": "",
+          "bssid": "",
+          "ipAddress": "",
+          "linkSpeed": "LINK_SPEED_UNKNOWN",
+          "mTxLinkSpeed": "LINK_SPEED_UNKNOWN",
+          "mRxLinkSpeed": "LINK_SPEED_UNKNOWN"
+        }
+      },
+      "children": [],
+      "security": "NONE",
+      "ssid": "CNS",
+      "isHidden": false
+    },
+    {
+      "SSID": "Sberbank-Guest",
+      "bssid": "00:d7:8f:8c:d1:d7",
+      "capabilities": "[ESS]",
+      "wiFiSignal": {
+        "primaryFrequency": 2412,
+        "centerFrequency": 2412,
+        "wiFiWidth": "MHZ_20",
+        "level": -75,
+        "is80211mc": false,
+        "wiFiBand": "GHZ2",
+        "frequencyStart": 2402,
+        "frequencyEnd": 2422,
+        "primaryWiFiChannel": {
+          "channel": 1,
+          "frequency": 2412
+        },
+        "centerWiFiChannel": {
+          "channel": 1,
+          "frequency": 2412
+        },
+        "strength": "TWO",
+        "distance": "~55.6m",
+        "channelDisplay": "1"
+      },
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "ssid": "",
+          "bssid": "",
+          "ipAddress": "",
+          "linkSpeed": "LINK_SPEED_UNKNOWN",
+          "mTxLinkSpeed": "LINK_SPEED_UNKNOWN",
+          "mRxLinkSpeed": "LINK_SPEED_UNKNOWN"
+        }
+      },
+      "children": [],
+      "security": "NONE",
+      "ssid": "Sberbank-Guest",
+      "isHidden": false
+    },
+    {
+      "SSID": "Sberbank-Guest",
+      "bssid": "00:d7:8f:8c:d1:d8",
+      "capabilities": "[ESS]",
+      "wiFiSignal": {
+        "primaryFrequency": 5260,
+        "centerFrequency": 5270,
+        "wiFiWidth": "MHZ_40",
+        "level": -76,
+        "is80211mc": false,
+        "wiFiBand": "GHZ5",
+        "frequencyStart": 5250,
+        "frequencyEnd": 5290,
+        "primaryWiFiChannel": {
+          "channel": 52,
+          "frequency": 5260
+        },
+        "centerWiFiChannel": {
+          "channel": 54,
+          "frequency": 5270
+        },
+        "strength": "TWO",
+        "distance": "~28.6m",
+        "channelDisplay": "52(54)"
+      },
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "ssid": "",
+          "bssid": "",
+          "ipAddress": "",
+          "linkSpeed": "LINK_SPEED_UNKNOWN",
+          "mTxLinkSpeed": "LINK_SPEED_UNKNOWN",
+          "mRxLinkSpeed": "LINK_SPEED_UNKNOWN"
+        }
+      },
+      "children": [],
+      "security": "NONE",
+      "ssid": "Sberbank-Guest",
+      "isHidden": false
+    },
+    {
+      "SSID": "SBRF",
+      "bssid": "00:d7:8f:8c:d1:df",
+      "capabilities": "[WPA2-EAP-CCMP][ESS]",
+      "wiFiSignal": {
+        "primaryFrequency": 5260,
+        "centerFrequency": 5270,
+        "wiFiWidth": "MHZ_40",
+        "level": -76,
+        "is80211mc": false,
+        "wiFiBand": "GHZ5",
+        "frequencyStart": 5250,
+        "frequencyEnd": 5290,
+        "primaryWiFiChannel": {
+          "channel": 52,
+          "frequency": 5260
+        },
+        "centerWiFiChannel": {
+          "channel": 54,
+          "frequency": 5270
+        },
+        "strength": "TWO",
+        "distance": "~28.6m",
+        "channelDisplay": "52(54)"
+      },
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "ssid": "",
+          "bssid": "",
+          "ipAddress": "",
+          "linkSpeed": "LINK_SPEED_UNKNOWN",
+          "mTxLinkSpeed": "LINK_SPEED_UNKNOWN",
+          "mRxLinkSpeed": "LINK_SPEED_UNKNOWN"
+        }
+      },
+      "children": [],
+      "security": "WPA2",
+      "ssid": "SBRF",
+      "isHidden": false
+    },
+    {
+      "SSID": "Sberbank",
+      "bssid": "00:d7:8f:8c:d1:de",
+      "capabilities": "[WPA2-EAP-CCMP][ESS]",
+      "wiFiSignal": {
+        "primaryFrequency": 5260,
+        "centerFrequency": 5270,
+        "wiFiWidth": "MHZ_40",
+        "level": -76,
+        "is80211mc": false,
+        "wiFiBand": "GHZ5",
+        "frequencyStart": 5250,
+        "frequencyEnd": 5290,
+        "primaryWiFiChannel": {
+          "channel": 52,
+          "frequency": 5260
+        },
+        "centerWiFiChannel": {
+          "channel": 54,
+          "frequency": 5270
+        },
+        "strength": "TWO",
+        "distance": "~28.6m",
+        "channelDisplay": "52(54)"
+      },
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "ssid": "",
+          "bssid": "",
+          "ipAddress": "",
+          "linkSpeed": "LINK_SPEED_UNKNOWN",
+          "mTxLinkSpeed": "LINK_SPEED_UNKNOWN",
+          "mRxLinkSpeed": "LINK_SPEED_UNKNOWN"
+        }
+      },
+      "children": [],
+      "security": "WPA2",
+      "ssid": "Sberbank",
+      "isHidden": false
+    },
+    {
+      "SSID": "CNS",
+      "bssid": "00:d7:8f:8c:d1:dc",
+      "capabilities": "[ESS]",
+      "wiFiSignal": {
+        "primaryFrequency": 5260,
+        "centerFrequency": 5270,
+        "wiFiWidth": "MHZ_40",
+        "level": -76,
+        "is80211mc": false,
+        "wiFiBand": "GHZ5",
+        "frequencyStart": 5250,
+        "frequencyEnd": 5290,
+        "primaryWiFiChannel": {
+          "channel": 52,
+          "frequency": 5260
+        },
+        "centerWiFiChannel": {
+          "channel": 54,
+          "frequency": 5270
+        },
+        "strength": "TWO",
+        "distance": "~28.6m",
+        "channelDisplay": "52(54)"
+      },
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "ssid": "",
+          "bssid": "",
+          "ipAddress": "",
+          "linkSpeed": "LINK_SPEED_UNKNOWN",
+          "mTxLinkSpeed": "LINK_SPEED_UNKNOWN",
+          "mRxLinkSpeed": "LINK_SPEED_UNKNOWN"
+        }
+      },
+      "children": [],
+      "security": "NONE",
+      "ssid": "CNS",
+      "isHidden": false
+    },
+    {
+      "SSID": "SBRF_HighQuality",
+      "bssid": "00:d7:8f:8c:d1:dd",
+      "capabilities": "[WPA2-EAP-CCMP][ESS]",
+      "wiFiSignal": {
+        "primaryFrequency": 5260,
+        "centerFrequency": 5270,
+        "wiFiWidth": "MHZ_40",
+        "level": -76,
+        "is80211mc": false,
+        "wiFiBand": "GHZ5",
+        "frequencyStart": 5250,
+        "frequencyEnd": 5290,
+        "primaryWiFiChannel": {
+          "channel": 52,
+          "frequency": 5260
+        },
+        "centerWiFiChannel": {
+          "channel": 54,
+          "frequency": 5270
+        },
+        "strength": "TWO",
+        "distance": "~28.6m",
+        "channelDisplay": "52(54)"
+      },
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "ssid": "",
+          "bssid": "",
+          "ipAddress": "",
+          "linkSpeed": "LINK_SPEED_UNKNOWN",
+          "mTxLinkSpeed": "LINK_SPEED_UNKNOWN",
+          "mRxLinkSpeed": "LINK_SPEED_UNKNOWN"
+        }
+      },
+      "children": [],
+      "security": "WPA2",
+      "ssid": "SBRF_HighQuality",
+      "isHidden": false
+    },
+    {
+      "SSID": "",
+      "bssid": "00:d7:8f:8c:d1:db",
+      "capabilities": "[WPA2-PSK-CCMP][ESS]",
+      "wiFiSignal": {
+        "primaryFrequency": 5260,
+        "centerFrequency": 5270,
+        "wiFiWidth": "MHZ_40",
+        "level": -76,
+        "is80211mc": false,
+        "wiFiBand": "GHZ5",
+        "frequencyStart": 5250,
+        "frequencyEnd": 5290,
+        "primaryWiFiChannel": {
+          "channel": 52,
+          "frequency": 5260
+        },
+        "centerWiFiChannel": {
+          "channel": 54,
+          "frequency": 5270
+        },
+        "strength": "TWO",
+        "distance": "~28.6m",
+        "channelDisplay": "52(54)"
+      },
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "ssid": "",
+          "bssid": "",
+          "ipAddress": "",
+          "linkSpeed": "LINK_SPEED_UNKNOWN",
+          "mTxLinkSpeed": "LINK_SPEED_UNKNOWN",
+          "mRxLinkSpeed": "LINK_SPEED_UNKNOWN"
+        }
+      },
+      "children": [],
+      "security": "WPA2",
+      "ssid": "***",
+      "isHidden": true
+    },
+    {
+      "SSID": "CNS",
+      "bssid": "00:d7:8f:8c:d1:d3",
+      "capabilities": "[ESS]",
+      "wiFiSignal": {
+        "primaryFrequency": 2412,
+        "centerFrequency": 2412,
+        "wiFiWidth": "MHZ_20",
+        "level": -77,
+        "is80211mc": false,
+        "wiFiBand": "GHZ2",
+        "frequencyStart": 2402,
+        "frequencyEnd": 2422,
+        "primaryWiFiChannel": {
+          "channel": 1,
+          "frequency": 2412
+        },
+        "centerWiFiChannel": {
+          "channel": 1,
+          "frequency": 2412
+        },
+        "strength": "TWO",
+        "distance": "~70.0m",
+        "channelDisplay": "1"
+      },
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "ssid": "",
+          "bssid": "",
+          "ipAddress": "",
+          "linkSpeed": "LINK_SPEED_UNKNOWN",
+          "mTxLinkSpeed": "LINK_SPEED_UNKNOWN",
+          "mRxLinkSpeed": "LINK_SPEED_UNKNOWN"
+        }
+      },
+      "children": [],
+      "security": "NONE",
+      "ssid": "CNS",
+      "isHidden": false
+    },
+    {
+      "SSID": "SBRF",
+      "bssid": "00:a6:ca:35:a3:c0",
+      "capabilities": "[WPA2-EAP-CCMP][ESS]",
+      "wiFiSignal": {
+        "primaryFrequency": 2462,
+        "centerFrequency": 2462,
+        "wiFiWidth": "MHZ_20",
+        "level": -82,
+        "is80211mc": false,
+        "wiFiBand": "GHZ2",
+        "frequencyStart": 2452,
+        "frequencyEnd": 2472,
+        "primaryWiFiChannel": {
+          "channel": 11,
+          "frequency": 2462
+        },
+        "centerWiFiChannel": {
+          "channel": 11,
+          "frequency": 2462
+        },
+        "strength": "ONE",
+        "distance": "~122.0m",
+        "channelDisplay": "11"
+      },
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "ssid": "",
+          "bssid": "",
+          "ipAddress": "",
+          "linkSpeed": "LINK_SPEED_UNKNOWN",
+          "mTxLinkSpeed": "LINK_SPEED_UNKNOWN",
+          "mRxLinkSpeed": "LINK_SPEED_UNKNOWN"
+        }
+      },
+      "children": [],
+      "security": "WPA2",
+      "ssid": "SBRF",
+      "isHidden": false
+    },
+    {
+      "SSID": "Sberbank",
+      "bssid": "00:a6:ca:35:a3:c1",
+      "capabilities": "[WPA2-EAP-CCMP][ESS]",
+      "wiFiSignal": {
+        "primaryFrequency": 2462,
+        "centerFrequency": 2462,
+        "wiFiWidth": "MHZ_20",
+        "level": -82,
+        "is80211mc": false,
+        "wiFiBand": "GHZ2",
+        "frequencyStart": 2452,
+        "frequencyEnd": 2472,
+        "primaryWiFiChannel": {
+          "channel": 11,
+          "frequency": 2462
+        },
+        "centerWiFiChannel": {
+          "channel": 11,
+          "frequency": 2462
+        },
+        "strength": "ONE",
+        "distance": "~122.0m",
+        "channelDisplay": "11"
+      },
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "ssid": "",
+          "bssid": "",
+          "ipAddress": "",
+          "linkSpeed": "LINK_SPEED_UNKNOWN",
+          "mTxLinkSpeed": "LINK_SPEED_UNKNOWN",
+          "mRxLinkSpeed": "LINK_SPEED_UNKNOWN"
+        }
+      },
+      "children": [],
+      "security": "WPA2",
+      "ssid": "Sberbank",
+      "isHidden": false
+    },
+    {
+      "SSID": "Sberbank-Guest",
+      "bssid": "00:a6:ca:35:a3:c7",
+      "capabilities": "[ESS]",
+      "wiFiSignal": {
+        "primaryFrequency": 2462,
+        "centerFrequency": 2462,
+        "wiFiWidth": "MHZ_20",
+        "level": -82,
+        "is80211mc": false,
+        "wiFiBand": "GHZ2",
+        "frequencyStart": 2452,
+        "frequencyEnd": 2472,
+        "primaryWiFiChannel": {
+          "channel": 11,
+          "frequency": 2462
+        },
+        "centerWiFiChannel": {
+          "channel": 11,
+          "frequency": 2462
+        },
+        "strength": "ONE",
+        "distance": "~122.0m",
+        "channelDisplay": "11"
+      },
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "ssid": "",
+          "bssid": "",
+          "ipAddress": "",
+          "linkSpeed": "LINK_SPEED_UNKNOWN",
+          "mTxLinkSpeed": "LINK_SPEED_UNKNOWN",
+          "mRxLinkSpeed": "LINK_SPEED_UNKNOWN"
+        }
+      },
+      "children": [],
+      "security": "NONE",
+      "ssid": "Sberbank-Guest",
+      "isHidden": false
+    },
+    {
+      "SSID": "CNS",
+      "bssid": "00:a6:ca:35:a3:c3",
+      "capabilities": "[ESS]",
+      "wiFiSignal": {
+        "primaryFrequency": 2462,
+        "centerFrequency": 2462,
+        "wiFiWidth": "MHZ_20",
+        "level": -82,
+        "is80211mc": false,
+        "wiFiBand": "GHZ2",
+        "frequencyStart": 2452,
+        "frequencyEnd": 2472,
+        "primaryWiFiChannel": {
+          "channel": 11,
+          "frequency": 2462
+        },
+        "centerWiFiChannel": {
+          "channel": 11,
+          "frequency": 2462
+        },
+        "strength": "ONE",
+        "distance": "~122.0m",
+        "channelDisplay": "11"
+      },
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "ssid": "",
+          "bssid": "",
+          "ipAddress": "",
+          "linkSpeed": "LINK_SPEED_UNKNOWN",
+          "mTxLinkSpeed": "LINK_SPEED_UNKNOWN",
+          "mRxLinkSpeed": "LINK_SPEED_UNKNOWN"
+        }
+      },
+      "children": [],
+      "security": "NONE",
+      "ssid": "CNS",
+      "isHidden": false
+    },
+    {
+      "SSID": "Sberbank",
+      "bssid": "00:a6:ca:10:ac:d1",
+      "capabilities": "[WPA2-EAP-CCMP][ESS]",
+      "wiFiSignal": {
+        "primaryFrequency": 2437,
+        "centerFrequency": 2437,
+        "wiFiWidth": "MHZ_20",
+        "level": -90,
+        "is80211mc": false,
+        "wiFiBand": "GHZ2",
+        "frequencyStart": 2427,
+        "frequencyEnd": 2447,
+        "primaryWiFiChannel": {
+          "channel": 6,
+          "frequency": 2437
+        },
+        "centerWiFiChannel": {
+          "channel": 6,
+          "frequency": 2437
+        },
+        "strength": "ZERO",
+        "distance": "~309.5m",
+        "channelDisplay": "6"
+      },
+      "wiFiAdditional": {
+        "vendorName": "",
+        "wiFiConnection": {
+          "ssid": "",
+          "bssid": "",
+          "ipAddress": "",
+          "linkSpeed": "LINK_SPEED_UNKNOWN",
+          "mTxLinkSpeed": "LINK_SPEED_UNKNOWN",
+          "mRxLinkSpeed": "LINK_SPEED_UNKNOWN"
+        }
+      },
+      "children": [],
+      "security": "WPA2",
+      "ssid": "Sberbank",
+      "isHidden": false
+    }
+  ],
+  "wiFiConnection": {
+    "ssid": "Sberbank-Guest",
+    "bssid": "00:a6:ca:35:a5:d8",
+    "ipAddress": "10.8.42.32",
+    "linkSpeed": "400 Mbps",
+    "mTxLinkSpeed": "LINK_SPEED_UNKNOWN",
+    "mRxLinkSpeed": "LINK_SPEED_UNKNOWN"
+  }
+}
