@@ -3,12 +3,14 @@ package app.repository.entity;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity(name="Points")
 public class Point {
-    @ManyToOne
-    List<>
+    @OneToMany
+    List<Report> reports = new ArrayList<>();
     @Id
     String bssid;
     String ssid;

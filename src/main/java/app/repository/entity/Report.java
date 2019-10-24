@@ -1,6 +1,7 @@
 package app.repository.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
@@ -8,9 +9,10 @@ import javax.persistence.OneToOne;
 @Entity(name="Reports")
 public class Report {
     @Id
+    @GeneratedValue
     Long reportId;
 
-    @OneToOne
+    @ManyToOne
     Point point;
 
     @ManyToOne
