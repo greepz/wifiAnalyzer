@@ -4,6 +4,7 @@ import java.util.Date;
 import java.time.LocalDateTime;
 
 public class ReportDto {
+    private Long id;
     private Date reportDate;
     private String user;
     private WifiDetailsDto pointDto;
@@ -30,5 +31,13 @@ public class ReportDto {
 
     public void setPointDto(WifiDetailsDto pointDto) {
         this.pointDto = pointDto;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 }

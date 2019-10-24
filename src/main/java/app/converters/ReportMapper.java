@@ -19,6 +19,7 @@ public class ReportMapper {
         for(Analize analize: analizes){
             for(Report report: analize.getReports()){
                 ReportDto reportDto = new ReportDto();
+                reportDto.setId(report.getReportId());
                 reportDto.setUser(analize.getUser().getLogin());
                 reportDto.setReportDate(new Date(analize.getCreated()));
                 reportDto.setPointDto(mapReport(report));
