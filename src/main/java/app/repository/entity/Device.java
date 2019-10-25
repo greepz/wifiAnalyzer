@@ -1,6 +1,7 @@
 package app.repository.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import java.util.ArrayList;
@@ -9,11 +10,9 @@ import java.util.List;
 @Entity(name="Devices")
 public class Device {
     @Id
-    Long deviceId;
-
+    String mac;
     String model;
     String version;
-    String mac;
     String ip;
 
     @OneToMany
@@ -57,13 +56,5 @@ public class Device {
 
     public void setAnalizes(List<Analize> analizes) {
         this.analizes = analizes;
-    }
-
-    public Long getDeviceId() {
-        return deviceId;
-    }
-
-    public void setDeviceId(Long deviceId) {
-        this.deviceId = deviceId;
     }
 }

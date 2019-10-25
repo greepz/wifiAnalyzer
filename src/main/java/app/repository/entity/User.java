@@ -18,6 +18,8 @@ public class User {
 
     @OneToMany(cascade = CascadeType.ALL)
     List<Analize> analizes = new ArrayList<>();
+    @OneToMany(cascade = CascadeType.ALL)
+    List<LatencyTest> latencyTests = new ArrayList<>();
 
     public Long getUserId() {
         return userId;

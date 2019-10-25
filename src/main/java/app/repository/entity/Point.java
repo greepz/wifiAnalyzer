@@ -1,5 +1,6 @@
 package app.repository.entity;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
@@ -11,11 +12,20 @@ import java.util.List;
 public class Point {
     @OneToMany
     List<Report> reports = new ArrayList<>();
+    @OneToMany(cascade = CascadeType.ALL)
+    List<LatencyTest> latencyTests = new ArrayList<>();
     @Id
     String bssid;
     String ssid;
     String capabilities;
 
+    public List<LatencyTest> getLatencyTests() {
+        return latencyTests;
+    }
+
+    public void setLatencyTests(List<LatencyTest> latencyTests) {
+        this.latencyTests = latencyTests;
+    }
 
     public List<Report> getReports() {
         return reports;

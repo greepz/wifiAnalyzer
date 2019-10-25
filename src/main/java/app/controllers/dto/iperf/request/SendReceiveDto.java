@@ -1,6 +1,4 @@
-package app.controllers.dto.iperf;
-
-import java.util.List;
+package app.controllers.dto.iperf.request;
 
 public class SendReceiveDto {
     StreamDto sender;

@@ -1,4 +1,4 @@
-package app.controllers.dto.iperf;
+package app.controllers.dto.iperf.request;
 
 public class TestStartDto {
     private String protocol;

@@ -21,12 +21,12 @@ public class MonitoringController {
 
     @Autowired
     @Qualifier("analyzeService")
-    private AnalyzerService service;
+    private AnalyzerService analyzerService;
 
 
     @PostMapping("/monitoring/send")
     public ResponseEntity<String> receive(@RequestBody MonitoringDto monitoringDto) throws JsonProcessingException {
-        service.save(monitoringDto);
+        analyzerService.save(monitoringDto);
         return new ResponseEntity<>("success", HttpStatus.CREATED);
     }
 
@@ -38,14 +38,14 @@ public class MonitoringController {
                                                      @RequestParam(name = "filterField", required = false, defaultValue = "") String filterField,
                                                      @RequestParam(name = "filterValue", required = false, defaultValue = "") String filterValue){
 
-        List<ReportDto> list = service.getReport(page, size, sortField, sortOrder, filterField, filterValue);
+        List<ReportDto> list = analyzerService.getReport(page, size, sortField, sortOrder, filterField, filterValue);
 
         return new ResponseEntity<>(list, HttpStatus.OK);
     }
 
     @GetMapping(value = "/monitoring/get/{id}")
     public ResponseEntity<ReportDto> getReport(@PathVariable(name = "id") Long id){
-        ReportDto reportDto =  service.getReportById(id);
+        ReportDto reportDto =  analyzerService.getReportById(id);
         return new ResponseEntity<>(reportDto, HttpStatus.OK);
     }
 

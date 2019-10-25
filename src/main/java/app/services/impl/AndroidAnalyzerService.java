@@ -5,6 +5,7 @@ import app.controllers.dto.monitoring.ReportDto;
 import app.controllers.dto.monitoring.WifiDetailsDto;
 import app.converters.ReportMapper;
 import app.repository.AnalizesRepository;
+import app.repository.DevicesRepository;
 import app.repository.PointsRepository;
 import app.repository.ReportsRepository;
 import app.repository.UsersRepository;
@@ -36,6 +37,8 @@ public class AndroidAnalyzerService implements AnalyzerService {
     ReportsRepository reportsRepository;
     @Autowired
     PointsRepository pointsRepository;
+    @Autowired
+    DevicesRepository devicesRepository;
 
     @Override
     public void save(MonitoringDto monitoringDto) {
@@ -47,6 +50,13 @@ public class AndroidAnalyzerService implements AnalyzerService {
         Analize analize = new Analize();
         analize.setUser(user);
         analize.setCreated(System.currentTimeMillis());
+        Device device = new Device();
+        device.setModel(monitoringDto.getDevice().getModel());
+        device.setVersion(monitoringDto.getDevice().getVersion());
+        device.setMac(monitoringDto.getDevice().getMac());
+        device.setIp(monitoringDto.getDevice().getIp());
+        analize.setDevice(device);
+        devicesRepository.save(device);
         for(WifiDetailsDto detailsDto : monitoringDto.getWiFiDetails()){
             Report report = new Report();
             analize.getReports().add(report);
@@ -77,10 +87,6 @@ public class AndroidAnalyzerService implements AnalyzerService {
 
         }
         analizesRepository.save(analize);
-
-
-
-
     }
 
     @Override

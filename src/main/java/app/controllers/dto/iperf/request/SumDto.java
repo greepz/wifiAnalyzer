@@ -1,21 +1,21 @@
-package app.controllers.dto.iperf;
+package app.controllers.dto.iperf.request;
 
-public class StreamDto {
-    private int socket;
+public class SumDto {
     private double start;
     private double end;
     private double seconds;
     private long bytes;
     private double bits_per_second;
+    private int retransmits;
     private boolean omitted;
     private boolean sender;
 
-    public int getSocket() {
-        return socket;
+    public int getRetransmits() {
+        return retransmits;
     }
 
-    public void setSocket(int socket) {
-        this.socket = socket;
+    public void setRetransmits(int retransmits) {
+        this.retransmits = retransmits;
     }
 
     public double getStart() {

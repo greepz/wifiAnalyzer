@@ -1,8 +1,8 @@
-package app.controllers.dto.iperf;
+package app.controllers.dto.iperf.request;
 
-public class AcceptConnectionDto {
-    private String host;
-    private int port;
+public class Connecting_toDto {
+    String host;
+    Integer port;
 
     public String getHost() {
         return host;
@@ -12,11 +12,11 @@ public class AcceptConnectionDto {
         this.host = host;
     }
 
-    public int getPort() {
+    public Integer getPort() {
         return port;
     }
 
-    public void setPort(int port) {
+    public void setPort(Integer port) {
         this.port = port;
     }
 }

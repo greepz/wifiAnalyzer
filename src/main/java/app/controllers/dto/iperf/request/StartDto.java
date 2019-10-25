@@ -1,4 +1,6 @@
-package app.controllers.dto.iperf;
+package app.controllers.dto.iperf.request;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.util.List;
 
@@ -11,9 +13,18 @@ public class StartDto {
     private int rcvbuf_actual;
     private TimestampDto timestamp;
     private AcceptConnectionDto accepted_connection;
+    private Connecting_toDto connecting_to;
     private String cookie;
     private int tcp_mss_default;
     private TestStartDto test_start;
+
+    public Connecting_toDto getConnecting_to() {
+        return connecting_to;
+    }
+
+    public void setConnecting_to(Connecting_toDto connecting_to) {
+        this.connecting_to = connecting_to;
+    }
 
     public List<ConnectDto> getConnected() {
         return connected;

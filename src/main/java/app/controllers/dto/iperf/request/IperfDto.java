@@ -1,4 +1,4 @@
-package app.controllers.dto.iperf;
+package app.controllers.dto.iperf.request;
 
 import java.util.List;
 

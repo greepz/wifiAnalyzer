@@ -6,14 +6,14 @@ import java.util.List;
 
 public class MonitoringDto {
     List<WifiDetailsDto> wiFiDetails;
-    DeviceDto deviceDto;
+    DeviceDto device;
 
-    public DeviceDto getDeviceDto() {
-        return deviceDto;
+    public DeviceDto getDevice() {
+        return device;
     }
 
-    public void setDeviceDto(DeviceDto deviceDto) {
-        this.deviceDto = deviceDto;
+    public void setDevice(DeviceDto device) {
+        this.device = device;
     }
 
     public List<WifiDetailsDto> getWiFiDetails() {
