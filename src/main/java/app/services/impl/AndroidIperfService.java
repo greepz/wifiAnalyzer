@@ -57,13 +57,12 @@ public class AndroidIperfService implements IperfService {
         latencyTest.setAcceptedConnectionPort(iperfDto.getIperf().getStart().getConnected().get(0).getRemote_port());
         latencyTest.setProtocol(iperfDto.getIperf().getStart().getTest_start().getProtocol());
         latencyTest.setDuration(iperfDto.getIperf().getStart().getTest_start().getDuration());
-        if (iperfDto.getIperf().getEnd().getSum_received().getBytes() != 0) {
-            latencyTest.setSummaryReceiveBytes(iperfDto.getIperf().getEnd().getSum_received().getBytes());
-            latencyTest.setSummaryReceiveBps(iperfDto.getIperf().getEnd().getSum_received().getBits_per_second());
-        }
-        if (iperfDto.getIperf().getEnd().getSum_sent().getBytes() != 0) {
+        if (iperfDto.getIperf().getEnd().getSum_sent().isSender()) {
             latencyTest.setSummarySendBytes(iperfDto.getIperf().getEnd().getSum_sent().getBytes());
             latencyTest.setSummarySendBps(iperfDto.getIperf().getEnd().getSum_sent().getBits_per_second());
+        }else{
+            latencyTest.setSummaryReceiveBytes(iperfDto.getIperf().getEnd().getSum_received().getBytes());
+            latencyTest.setSummaryReceiveBps(iperfDto.getIperf().getEnd().getSum_received().getBits_per_second());
         }
         latencyTestRepository.save(latencyTest);
         for(IntervalDto interval : iperfDto.getIperf().getIntervals()){

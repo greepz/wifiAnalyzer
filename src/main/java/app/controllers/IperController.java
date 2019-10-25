@@ -23,9 +23,9 @@ public class IperController {
     @Autowired
     AndroidIperfService iperfService;
 
-    @PostMapping("/iperf/send")
+    @PostMapping(value = "/iperf/send",name = "",produces = "text/plain")
     public ResponseEntity<String> receive(@RequestBody String request) throws Exception {
-        request = request.replaceAll("\\\\","");
+        request = request.substring(1,request.length()-2).replaceAll("\\\\","");
         ObjectMapper mapper = new ObjectMapper();
         mapper.enable(DeserializationFeature.ACCEPT_EMPTY_STRING_AS_NULL_OBJECT);
         IperfDtoWithInfo iperfDto = mapper.readValue(request, IperfDtoWithInfo.class);
