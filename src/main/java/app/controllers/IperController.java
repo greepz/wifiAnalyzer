@@ -34,7 +34,7 @@ public class IperController {
     }
 
     @GetMapping("/iperf/get")
-    public ResponseEntity<IperfDto> getReport(@RequestParam(name = "page", required = false) Integer page,
+    public ResponseEntity<List<LatencyTestInfo>> getReport(@RequestParam(name = "page", required = false) Integer page,
                                                    @RequestParam(name = "sortField", required = false) String sortField,
                                                    @RequestParam(name = "sortOrder", required = false) String sortOrder,
                                                    @RequestParam(name = "filterField", required = false) String filterField,
@@ -44,7 +44,7 @@ public class IperController {
 
         List<LatencyTestInfo> latencyTestInfos = iperfService.getLatencyReports();
 
-        return new ResponseEntity<>(new IperfDto(), HttpStatus.OK);
+        return new ResponseEntity<>(latencyTestInfos, HttpStatus.OK);
     }
 
     @GetMapping(value = "/iperf/get/{id}")
